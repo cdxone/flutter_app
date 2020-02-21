@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/flutter_layout_demo.dart';
+import 'package:flutter_app/open_other_app.dart';
 import 'package:flutter_app/res_demo.dart';
 import 'package:flutter_app/router_demo.dart';
 import 'package:flutter_app/stateful_widget_demo2.dart';
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
     {'title': '路由跳转的例子', 'route': RouterDemo()},
     {'title': 'Gesture的例子', 'route': GestureDemo()},
     {'title': '如何导入和使用Flutter的例子', 'route': ResDemo()},
+    {'title': '如何打开第三方应用的例子', 'route': OpenOtherApp()},
   ];
 
   @override
