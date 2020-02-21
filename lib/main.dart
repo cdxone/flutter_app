@@ -8,7 +8,10 @@ import 'package:flutter_app/statefull_widget_demo.dart';
 import 'package:flutter_app/stateless_widget_demo.dart';
 import 'package:flutter_app/utils/toast.dart';
 
+import 'app_life_cycle_demo.dart';
+import 'change_theme_demo.dart';
 import 'gesture_demo.dart';
+import 'life_cycle_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,6 +25,9 @@ class MyApp extends StatelessWidget {
     {'title': 'Gesture的例子', 'route': GestureDemo()},
     {'title': '如何导入和使用Flutter的例子', 'route': ResDemo()},
     {'title': '如何打开第三方应用的例子', 'route': OpenOtherApp()},
+    {'title': 'Flutter页面的生命周期', 'route': LifeCycleDemo()},
+    {'title': 'Flutter应用的生命周期', 'route': AppLifeCycleDemo()},
+    {'title': '如何修改Flutter的主题', 'route': ChangeThemeDemo()},
   ];
 
   @override
