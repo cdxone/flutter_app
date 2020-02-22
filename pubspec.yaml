@@ -25,8 +25,11 @@ dependencies:
   cupertino_icons: ^0.1.2
   # 颜色组件
   flutter_color_plugin: ^0.0.2
-  #
+  # 跳转到其它应用，或者是打开其它应用的一个组件或者是插件
   url_launcher: ^5.4.2
+  # 图片选择和拍照的插件
+  # image_picker: ^0.6.3+4
+  # image_picker它是用到了一个AndroidX的一个兼容库，
 
 
 dev_dependencies:
@@ -75,3 +78,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: RubikMonoOne # 定义字体的名字，随便起
+      fonts:
+        - asset: fonts/RubikMonoOne-Regular.ttf # 定义字体的路径

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/flutter_layout_demo.dart';
 import 'package:flutter_app/open_other_app.dart';
+import 'package:flutter_app/photo_demo.dart';
 import 'package:flutter_app/res_demo.dart';
 import 'package:flutter_app/router_demo.dart';
 import 'package:flutter_app/stateful_widget_demo2.dart';
@@ -8,6 +9,7 @@ import 'package:flutter_app/statefull_widget_demo.dart';
 import 'package:flutter_app/stateless_widget_demo.dart';
 import 'package:flutter_app/utils/toast.dart';
 
+import 'ChangeFontDemo.dart';
 import 'app_life_cycle_demo.dart';
 import 'change_theme_demo.dart';
 import 'gesture_demo.dart';
@@ -28,6 +30,8 @@ class MyApp extends StatelessWidget {
     {'title': 'Flutter页面的生命周期', 'route': LifeCycleDemo()},
     {'title': 'Flutter应用的生命周期', 'route': AppLifeCycleDemo()},
     {'title': '如何修改Flutter的主题', 'route': ChangeThemeDemo()},
+    {'title': '如何修改字体', 'route': ChangeFontDemo()},
+    {'title': '拍照App', 'route': PhotoDemo()},
   ];
 
   @override
