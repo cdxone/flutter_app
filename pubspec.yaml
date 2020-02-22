@@ -27,9 +27,10 @@ dependencies:
   flutter_color_plugin: ^0.0.2
   # 跳转到其它应用，或者是打开其它应用的一个组件或者是插件
   url_launcher: ^5.4.2
-  # 图片选择和拍照的插件
-  # image_picker: ^0.6.3+4
-  # image_picker它是用到了一个AndroidX的一个兼容库，
+  # 图片选择和拍照的插件,image_picker它是用到了一个AndroidX的一个兼容库，所有必须要引入androidX
+  # 但是由于这个项目在创建的时候就已经配置了androidX，所以它不需要配置。
+  image_picker: ^0.6.3+4
+
 
 
 dev_dependencies:
