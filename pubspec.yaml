@@ -87,3 +87,6 @@ flutter:
     - family: RubikMonoOne # 定义字体的名字，随便起
       fonts:
         - asset: fonts/RubikMonoOne-Regular.ttf # 定义字体的路径
+    - family: iconFont # 定义字体的名字，随便起
+      fonts:
+        - asset: fonts/iconfont.ttf # 定义字体的路径

@@ -24,6 +24,21 @@ class _IconDemoState extends State<IconDemo> {
             Center(
               child: Icon(Icons.android,size: 100,color: Colors.red,),
             ),
+            Container(
+              margin: EdgeInsets.only(top:10,left: 10),
+              alignment: Alignment.topLeft,
+              child: Text('自定义Icon2\n https://segmentfault.com/a/1190000019750283'),
+            ),
+            Container(
+              child: Center(
+                child: Icon(
+                    IconData(0xe6ef, fontFamily: 'iconFont'),
+                    size: 100,
+                    color: Colors.black
+                ),
+              ),
+            ),
+
           ],
         )
 
