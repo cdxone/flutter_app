@@ -2,25 +2,22 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/utils/toast.dart';
 
+/// 封装了ListView点击的效果
+class MyListViewPage extends StatefulWidget {
+  String _title;
+  List<Map> entries;
 
-abstract class MyListView extends StatefulWidget {
-
-  final List<Map> entries;
-
-  MyListView(this.entries){
-    print('fu');
-    print(this.entries);
-  }
+  MyListViewPage(this._title, this.entries);
 
   @override
-  _MyListViewState createState() => _MyListViewState(entries);
+  _MyListViewState createState() => _MyListViewState(_title, entries);
 }
 
-class _MyListViewState extends State<MyListView> {
+class _MyListViewState extends State<MyListViewPage> {
+  String _title;
+  List<Map> entries;
 
-  final List<Map> entries;
-
-  _MyListViewState(this.entries);
+  _MyListViewState(this._title, this.entries);
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +28,7 @@ class _MyListViewState extends State<MyListView> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter例子大全'),
+          title: Text(_title),
         ),
         body: ListView.separated(
           padding: const EdgeInsets.all(8),
@@ -53,7 +50,7 @@ class _MyListViewState extends State<MyListView> {
             );
           },
           separatorBuilder: (BuildContext context, int index) =>
-          const Divider(),
+              const Divider(),
         ),
       ),
     );

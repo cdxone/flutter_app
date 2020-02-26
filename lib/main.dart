@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/AnimationDemo.dart';
 import 'package:flutter_app/flutter_layout_demo.dart';
 import 'package:flutter_app/open_other_app.dart';
 import 'package:flutter_app/photo_demo.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatefulWidget {
 
 class _MyApp extends State<MyApp> {
   final List<Map> entries = [
+    {'title': '动画例子', 'route': AnimationDemo()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatefulWidgetDemo2()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatelessWidgetDemo()},
     {'title': 'StatefulWidget组件及其子组件例子', 'route': StatefulWidgetDemo()},
