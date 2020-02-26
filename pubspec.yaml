@@ -30,8 +30,12 @@ dependencies:
   # 图片选择和拍照的插件,image_picker它是用到了一个AndroidX的一个兼容库，所有必须要引入androidX
   # 但是由于这个项目在创建的时候就已经配置了androidX，所以它不需要配置。
   image_picker: ^0.6.3+4
-
-
+  #  path_provider 负责查找 iOS/Android 的目录文件
+  path_provider: ^1.6.1
+  # 从内存、本地资源加载，可以使用transparent_image
+  transparent_image: ^1.0.0
+  # 从网络上加载图片，然后将这个图片缓存到本地
+  cached_network_image: ^2.0.0
 
 dev_dependencies:
   flutter_test:

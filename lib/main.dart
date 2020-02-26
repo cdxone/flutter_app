@@ -17,9 +17,19 @@ import 'life_cycle_demo.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+
+  @override
+  State<StatefulWidget> createState() {
+    return _MyApp();
+  }
+
+
+}
+
+class _MyApp extends State<MyApp> {
   final List<Map> entries = [
-    {'title': 'StatelessWidget组件及其子组件例子', 'route': StatefulWidgetDemo2(StatefulWidgetDemo2.getData())},
+    {'title': 'StatelessWidget组件及其子组件例子', 'route': StatefulWidgetDemo2()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatelessWidgetDemo()},
     {'title': 'StatefulWidget组件及其子组件例子', 'route': StatefulWidgetDemo()},
     {'title': 'Flutter容器的例子', 'route': FlutterLayoutDemo()},
@@ -31,7 +41,7 @@ class MyApp extends StatelessWidget {
     {'title': 'Flutter应用的生命周期', 'route': AppLifeCycleDemo()},
     {'title': '如何修改Flutter的主题', 'route': ChangeThemeDemo()},
     {'title': '如何修改字体', 'route': ChangeFontDemo()},
-    {'title': '拍照App', 'route': PhotoDemo()},
+    {'title': '拍照App', 'route': PhotoApp()},
   ];
 
   @override
@@ -73,7 +83,7 @@ class MyApp extends StatelessWidget {
             );
           },
           separatorBuilder: (BuildContext context, int index) =>
-              const Divider(),
+          const Divider(),
         ),
       ),
     );
