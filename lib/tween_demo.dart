@@ -22,6 +22,7 @@ class _TweenDemoState extends State<TweenDemo> with SingleTickerProviderStateMix
     animationController = AnimationController(duration: Duration(seconds: 3),vsync: this);
     // 这种形式比较特殊
     animation = Tween<double>(begin: 0.0,end: 300.0).animate(animationController)
+      // 这个地方必须要注意了,相当于是建造者模式的一种优化。
       ..addListener((){
         setState(() {
           animationValue = animation.value;
