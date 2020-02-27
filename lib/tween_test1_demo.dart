@@ -5,8 +5,6 @@ class TweenTest1Demo extends StatefulWidget {
   @override
   _TweenDemoState createState() => _TweenDemoState();
 
-
-
 }
 
 class _TweenDemoState extends State<TweenTest1Demo> with SingleTickerProviderStateMixin{

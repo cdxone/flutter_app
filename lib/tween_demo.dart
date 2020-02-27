@@ -40,20 +40,20 @@ class _TweenDemoState extends State<TweenDemo> with SingleTickerProviderStateMix
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tween例子',
+      title: 'Tween例子2',
       theme: ThemeData(
         primarySwatch: Colors.blue
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tween例子'),
+          title: Text('Tween例子2'),
         ),
         body: (
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               RaisedButton(
-                child: Text('开启动画'),
+                child: Text('开启动画2'),
                 onPressed: (){
                   animationController.reset();
                   animationController.forward();
