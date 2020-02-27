@@ -36,6 +36,8 @@ dependencies:
   transparent_image: ^1.0.0
   # 从网络上加载图片，然后将这个图片缓存到本地
   cached_network_image: ^2.0.0
+  # 轮播图组件
+  flutter_swiper: ^1.1.6
 
 dev_dependencies:
   flutter_test:

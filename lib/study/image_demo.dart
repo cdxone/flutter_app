@@ -10,7 +10,8 @@ class ImageDemo extends StatefulWidget {
   @override
   _ImageDemoState createState() => _ImageDemoState();
 }
-
+/// image属性
+/// 1、fit:BoxFit.fill用来在容器内进行填充
 class _ImageDemoState extends State<ImageDemo> {
   @override
   Widget build(BuildContext context) {
