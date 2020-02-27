@@ -7,6 +7,7 @@ import 'package:flutter_app/study/change_theme_demo.dart';
 import 'package:flutter_app/study/flutter_layout_demo.dart';
 import 'package:flutter_app/study/gesture_demo.dart';
 import 'package:flutter_app/study/life_cycle_demo.dart';
+import 'package:flutter_app/study/net_rquest_demo.dart';
 import 'package:flutter_app/study/open_other_app.dart';
 import 'package:flutter_app/study/photo_demo.dart';
 import 'package:flutter_app/study/res_demo.dart';
@@ -34,6 +35,7 @@ class _MyApp extends State<MyApp> {
   final List<Map> entries = [
     {'title': '动画例子', 'route': AnimationDemo()},
     {'title': '组件例子', 'route': WidgetDemo()},
+    {'title': '网络请求', 'route': NetRequestDemo()},
     {'title': '应用实例', 'route': AppsDemo()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatefulWidgetDemo2()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatelessWidgetDemo()},
