@@ -40,11 +40,11 @@ class _MyStatefulWidgetAppbarState extends State<MyStatefulWidgetAppbar> {
 
 class Params{
   String getTitle(){
-    return '例子';
+    return ' ';
   }
 
   Widget getBody(){
-    return Text('test');
+    return Text('');
   }
 
   initState(){

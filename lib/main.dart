@@ -5,6 +5,7 @@ import 'package:flutter_app/study/app_life_cycle_demo.dart';
 import 'package:flutter_app/study/apps_demo.dart';
 import 'package:flutter_app/study/change_theme_demo.dart';
 import 'package:flutter_app/study/flutter_layout_demo.dart';
+import 'package:flutter_app/study/future_demo.dart';
 import 'package:flutter_app/study/gesture_demo.dart';
 import 'package:flutter_app/study/life_cycle_demo.dart';
 import 'package:flutter_app/study/net_rquest_demo.dart';
@@ -37,6 +38,7 @@ class _MyApp extends State<MyApp> {
     {'title': '组件例子', 'route': WidgetDemo()},
     {'title': '网络请求', 'route': NetRequestDemo()},
     {'title': '应用实例', 'route': AppsDemo()},
+    {'title': 'Future用法', 'route': FutureDemo()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatefulWidgetDemo2()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatelessWidgetDemo()},
     {'title': 'StatefulWidget组件及其子组件例子', 'route': StatefulWidgetDemo()},
