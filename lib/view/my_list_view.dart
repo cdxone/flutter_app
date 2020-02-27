@@ -4,8 +4,8 @@ import 'package:flutter_app/utils/toast.dart';
 
 /// 封装了ListView点击的效果
 class MyListViewPage extends StatefulWidget {
-  String _title;
-  List<Map> entries;
+   final String _title;
+   final List<Map> entries;
 
   MyListViewPage(this._title, this.entries);
 

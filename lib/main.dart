@@ -9,6 +9,7 @@ import 'package:flutter_app/stateful_widget_demo2.dart';
 import 'package:flutter_app/statefull_widget_demo.dart';
 import 'package:flutter_app/stateless_widget_demo.dart';
 import 'package:flutter_app/utils/toast.dart';
+import 'package:flutter_app/widget_demo.dart';
 
 import 'ChangeFontDemo.dart';
 import 'app_life_cycle_demo.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatefulWidget {
 class _MyApp extends State<MyApp> {
   final List<Map> entries = [
     {'title': '动画例子', 'route': AnimationDemo()},
+    {'title': '组件例子', 'route': WidgetDemo()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatefulWidgetDemo2()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatelessWidgetDemo()},
     {'title': 'StatefulWidget组件及其子组件例子', 'route': StatefulWidgetDemo()},
