@@ -1,4 +1,4 @@
-import 'package:flutter_app/scafford_demo.dart';
+import 'package:flutter_app/study/scafford_demo.dart';
 import 'package:flutter_app/view/my_list_view.dart';
 
 class WidgetDemo extends MyListViewPage {

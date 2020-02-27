@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/AnimationDemo.dart';
-import 'package:flutter_app/flutter_layout_demo.dart';
-import 'package:flutter_app/open_other_app.dart';
-import 'package:flutter_app/photo_demo.dart';
-import 'package:flutter_app/res_demo.dart';
-import 'package:flutter_app/router_demo.dart';
-import 'package:flutter_app/stateful_widget_demo2.dart';
-import 'package:flutter_app/statefull_widget_demo.dart';
-import 'package:flutter_app/stateless_widget_demo.dart';
+import 'package:flutter_app/study/AnimationDemo.dart';
+import 'package:flutter_app/study/ChangeFontDemo.dart';
+import 'package:flutter_app/study/app_life_cycle_demo.dart';
+import 'package:flutter_app/study/apps_demo.dart';
+import 'package:flutter_app/study/change_theme_demo.dart';
+import 'package:flutter_app/study/flutter_layout_demo.dart';
+import 'package:flutter_app/study/gesture_demo.dart';
+import 'package:flutter_app/study/life_cycle_demo.dart';
+import 'package:flutter_app/study/open_other_app.dart';
+import 'package:flutter_app/study/photo_demo.dart';
+import 'package:flutter_app/study/res_demo.dart';
+import 'package:flutter_app/study/router_demo.dart';
+import 'package:flutter_app/study/stateful_widget_demo2.dart';
+import 'package:flutter_app/study/statefull_widget_demo.dart';
+import 'package:flutter_app/study/stateless_widget_demo.dart';
+import 'package:flutter_app/study/widget_demo.dart';
 import 'package:flutter_app/utils/toast.dart';
-import 'package:flutter_app/widget_demo.dart';
 
-import 'ChangeFontDemo.dart';
-import 'app_life_cycle_demo.dart';
-import 'change_theme_demo.dart';
-import 'gesture_demo.dart';
-import 'life_cycle_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -33,6 +34,7 @@ class _MyApp extends State<MyApp> {
   final List<Map> entries = [
     {'title': '动画例子', 'route': AnimationDemo()},
     {'title': '组件例子', 'route': WidgetDemo()},
+    {'title': '应用实例', 'route': AppsDemo()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatefulWidgetDemo2()},
     {'title': 'StatelessWidget组件及其子组件例子', 'route': StatelessWidgetDemo()},
     {'title': 'StatefulWidget组件及其子组件例子', 'route': StatefulWidgetDemo()},

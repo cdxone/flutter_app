@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/image_demo.dart';
 import 'package:flutter_app/utils/toast.dart';
 
 import 'icon_demo.dart';
+import 'image_demo.dart';
 
 class StatefulWidgetDemo2 extends StatefulWidget {
   @override

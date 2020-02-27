@@ -1,5 +1,5 @@
-import 'package:flutter_app/tween_demo.dart';
-import 'package:flutter_app/tween_test1_demo.dart';
+import 'package:flutter_app/study/tween_demo.dart';
+import 'package:flutter_app/study/tween_test1_demo.dart';
 import 'package:flutter_app/view/my_list_view.dart';
 
 import 'hero_test1_demo.dart';

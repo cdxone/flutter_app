@@ -29,7 +29,10 @@ class _ScaffoldNavigationBarDemoState extends State<ScaffoldNavigationBarDemo> {
       home: Scaffold(
         body: PageView(
           controller: _controller,
-          children: <Widget>[],
+          children: <Widget>[
+            //TODO 需要定义切换组件
+            //HomePage()
+          ],
           physics: NeverScrollableScrollPhysics(),
         ),
         bottomNavigationBar:
@@ -38,6 +41,7 @@ class _ScaffoldNavigationBarDemoState extends State<ScaffoldNavigationBarDemo> {
                 //fixed表示文字和图标都显示，shifting：表示选中的时候显示文字，其余情况下不显示文字
                 type: BottomNavigationBarType.fixed,
                 onTap: (int index){
+                  _controller.jumpToPage(_currentIndex);
                   setState(() {
                     _currentIndex = index;
                   });

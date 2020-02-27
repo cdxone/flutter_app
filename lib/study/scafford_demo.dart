@@ -1,6 +1,6 @@
-import 'package:flutter_app/scaffold_navigationbar_demo.dart';
-import 'package:flutter_app/scafford_tabbar.dart';
-import 'package:flutter_app/scafford_tabbar_demo2.dart';
+import 'package:flutter_app/study/scaffold_navigationbar_demo.dart';
+import 'package:flutter_app/study/scafford_tabbar.dart';
+import 'package:flutter_app/study/scafford_tabbar_demo2.dart';
 import 'package:flutter_app/view/my_list_view.dart';
 
 class ScaffoldDemo extends MyListViewPage {
