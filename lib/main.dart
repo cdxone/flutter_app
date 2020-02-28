@@ -9,6 +9,8 @@ import 'package:flutter_app/study/flutter_layout_demo.dart';
 import 'package:flutter_app/study/future_builder_demo.dart';
 import 'package:flutter_app/study/future_demo.dart';
 import 'package:flutter_app/study/gesture_demo.dart';
+import 'package:flutter_app/study/good_website_demo.dart';
+import 'package:flutter_app/study/json_demo.dart';
 import 'package:flutter_app/study/life_cycle_demo.dart';
 import 'package:flutter_app/study/net_rquest_demo.dart';
 import 'package:flutter_app/study/open_other_app.dart';
@@ -36,9 +38,11 @@ class MyApp extends StatefulWidget {
 
 class _MyApp extends State<MyApp> {
   final List<Map> entries = [
+    {'title': '好的网站', 'route': GoodWebsiteDemo()},
     {'title': '数据结构', 'route': DataStructureDemo()},
     {'title': '动画例子', 'route': AnimationDemo()},
     {'title': '组件例子', 'route': WidgetDemo()},
+    {'title': 'Json序列化', 'route': JsonDemo()},
     {'title': '网络请求', 'route': NetRequestDemo()},
     {'title': '应用实例', 'route': AppsDemo()},
     {'title': 'Future用法', 'route': FutureDemo()},

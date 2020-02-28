@@ -61,6 +61,7 @@ flutter:
   # 注意：这个地方assets前面不能有空格
   assets:
     - images/test.png
+    - data/home_page.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
