@@ -35,6 +35,12 @@ class _FutureDemoState extends State<FutureDemo> {
               },
               child: Text('获取Future中的结果'),
             ),
+            RaisedButton(
+              onPressed: () {
+                testDealyed();
+              },
+              child: Text('Future.delayed的使用'),
+            )
           ],
         ),
       ),
@@ -68,6 +74,14 @@ class _FutureDemoState extends State<FutureDemo> {
       });
     }).catchError((e) {
       _result = e;
+    });
+  }
+
+  void testDealyed() {
+    Future.delayed(Duration(seconds: 2),(){
+        setState(() {
+          _result = 'Future.delayed执行完毕';
+        });
     });
   }
 }
