@@ -9,7 +9,8 @@ class NetUtils{
   static Future fetchGet(String url) async {
     final response = await http.get(url);
     //将response转换为map对象
-    final result = json.decode(response.body);
+    Utf8Decoder utf8decoder = Utf8Decoder(); //fix 中文乱码
+    final result = json.decode(utf8decoder.convert(response.bodyBytes));
     return result;
   }
 
