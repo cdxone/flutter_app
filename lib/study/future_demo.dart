@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/utils/toast.dart';
 import 'package:flutter_app/view/my_title.dart';
 
 // ignore: must_be_immutable
@@ -40,6 +41,12 @@ class _FutureDemoState extends State<FutureDemo> {
                 testDealyed();
               },
               child: Text('Future.delayed的使用'),
+            ),
+            RaisedButton(
+              onPressed: () {
+                testAsyncAwait();
+              },
+              child: Text('Future + async + await 将异步转换为同步'),
             )
           ],
         ),
@@ -78,10 +85,19 @@ class _FutureDemoState extends State<FutureDemo> {
   }
 
   void testDealyed() {
-    Future.delayed(Duration(seconds: 2),(){
-        setState(() {
-          _result = 'Future.delayed执行完毕';
-        });
+    Future.delayed(Duration(seconds: 2), () {
+      setState(() {
+        _result = 'Future.delayed执行完毕';
+      });
     });
+  }
+
+  /// 加上async将同步的方法转换为异步
+  void testAsyncAwait() async {
+    ///加上await用来获取异步获取的数据，否则是不能获取的
+    int result = await Future.delayed(Duration(seconds: 1), () {
+      return Future.value(10);
+    });
+    Toast.toast(context, msg: 'Future+ async + await获取数据成功,result:$result');
   }
 }
