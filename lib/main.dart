@@ -23,6 +23,8 @@ import 'package:flutter_app/study/stateless_widget_demo.dart';
 import 'package:flutter_app/study/widget_demo.dart';
 import 'package:flutter_app/utils/toast.dart';
 
+import 'data_store_demo.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -40,6 +42,7 @@ class _MyApp extends State<MyApp> {
   final List<Map> entries = [
     {'title': '好的网站', 'route': GoodWebsiteDemo()},
     {'title': '数据结构', 'route': DataStructureDemo()},
+    {'title': '数据存储', 'route': DataStoreDemo()},
     {'title': '动画例子', 'route': AnimationDemo()},
     {'title': '组件例子', 'route': WidgetDemo()},
     {'title': 'Json序列化', 'route': JsonDemo()},

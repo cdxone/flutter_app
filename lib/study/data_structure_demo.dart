@@ -9,6 +9,13 @@ class DataStructureDemo extends MyStatefulWidgetAppbar {
   }
 
   @override
+  Widget getBody() {
+    return Center(
+      child: Text('代码中有例子'),
+    );
+  }
+
+  @override
   initState() {
     testInt();
     testString();
@@ -28,6 +35,14 @@ class DataStructureDemo extends MyStatefulWidgetAppbar {
 
     // String转double
     print(double.parse('1.1'));
+
+    //插值表达式
+    //${expression}
+    //如果只有一个变量，可以省略{}
+    int a = 1;
+    int b = 2;
+    print("a + b = ${a + b}");//结果如下：a + b = 3
+    print("a = $a");
   }
 
   void testDouble() {
