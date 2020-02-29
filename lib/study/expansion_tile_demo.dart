@@ -6,23 +6,20 @@ class ExpansionTileDemo extends StatefulWidget {
   _ExpansionTileDemoState createState() => _ExpansionTileDemoState();
 }
 
-const CITY_NAMES = {
-  '北京':['东城区', '西城区', '朝阳区', '丰台区', '石景山区', '海淀区', '顺义区'],
-  '上海': ['黄浦区', '徐汇区', '长宁区', '静安区', '普陀区', '闸北区', '虹口区'],
-  '广州': ['越秀', '海珠', '荔湾', '天河', '白云', '黄埔', '南沙', '番禺'],
-  '深圳': ['南山', '福田', '罗湖', '盐田', '龙岗', '宝安', '龙华'],
-  '杭州': ['上城区', '下城区', '江干区', '拱墅区', '西湖区', '滨江区'],
-  '苏州': ['姑苏区', '吴中区', '相城区', '高新区', '虎丘区', '工业园区', '吴江区']
-};
-
 class _ExpansionTileDemoState extends State<ExpansionTileDemo> {
+  Map CITY_NAMES = {
+    '北京': ['东城区', '西城区', '朝阳区', '丰台区', '石景山区', '海淀区', '顺义区'],
+    '上海': ['黄浦区', '徐汇区', '长宁区', '静安区', '普陀区', '闸北区', '虹口区'],
+    '广州': ['越秀', '海珠', '荔湾', '天河', '白云', '黄埔', '南沙', '番禺'],
+    '深圳': ['南山', '福田', '罗湖', '盐田', '龙岗', '宝安', '龙华'],
+    '杭州': ['上城区', '下城区', '江干区', '拱墅区', '西湖区', '滨江区'],
+    '苏州': ['姑苏区', '吴中区', '相城区', '高新区', '虎丘区', '工业园区', '吴江区']
+  };
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.blue
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: AppBar(
           title: Text('ExpansionTile例子'),
@@ -35,10 +32,16 @@ class _ExpansionTileDemoState extends State<ExpansionTileDemo> {
   }
 
   List<Widget> _buildList() {
-    List<Widget> list = [];
-    CITY_NAMES.keys.map((key){
-      list.add(_item(key,CITY_NAMES[key]));
-    });
+    // 第一种实现方式
+//    List<Widget> list = [];
+//    CITY_NAMES.keys.forEach((key){
+//      list.add(_item(key,CITY_NAMES[key]));
+//    });
+//    return list;
+    // 第二种实现方式
+    return CITY_NAMES.keys.map((key) {
+      return _item(key, CITY_NAMES[key]);
+    }).toList();
   }
 
   Widget _item(String key, List<String> city_names) {
@@ -54,14 +57,20 @@ class _ExpansionTileDemoState extends State<ExpansionTileDemo> {
 //    })
     return ExpansionTile(
       title: Text(key),
-      trailing: Icon(Icons.arrow_upward),
       children: _buildETItem(city_names),
     );
   }
 
   List<Widget> _buildETItem(List<String> city_names) {
-//    return city_names.map((String city){
-//      return ;
-//    }).toList();
+    return city_names.map((String city) {
+      return Container(
+        // 增加了这个属性以后,Text在内部填满了
+        alignment: Alignment.centerLeft,
+        height: 30,
+        margin: EdgeInsets.only(bottom: 2),
+        decoration: BoxDecoration(color: Colors.teal),
+        child: Text(city),
+      );
+    }).toList();
   }
 }
