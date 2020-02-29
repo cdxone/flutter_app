@@ -1,6 +1,7 @@
 import 'package:flutter_app/study/opacity_demo.dart';
 import 'package:flutter_app/study/refreshindicator_demo.dart';
 import 'package:flutter_app/study/scafford_demo.dart';
+import 'package:flutter_app/study/scroll_controller_demo.dart';
 import 'package:flutter_app/view/my_list_view.dart';
 
 import 'expansion_tile_demo.dart';
@@ -19,6 +20,7 @@ class WidgetDemo extends MyListViewPage {
     {'title': 'Opacity:透明度控件', 'route': OpacityDemo()},
     {'title': 'RefreshIndicator:下拉刷新组件', 'route': RefreshIndicatorDemo()},
     {'title': 'Scafford:脚手架控件', 'route': ScaffoldDemo()},
+    {'title': 'ScrollController:滚动监听', 'route': ScrollControllerDemo()},
   ];
 
   WidgetDemo() : super(pageTitle, items);
