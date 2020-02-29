@@ -1,4 +1,5 @@
 import 'package:flutter_app/study/opacity_demo.dart';
+import 'package:flutter_app/study/refreshindicator_demo.dart';
 import 'package:flutter_app/study/scafford_demo.dart';
 import 'package:flutter_app/view/my_list_view.dart';
 
@@ -16,6 +17,7 @@ class WidgetDemo extends MyListViewPage {
     {'title': 'GridView:网格布局', 'route': GridViewDemo()},
     {'title': 'ListView', 'route': ListViewDemo()},
     {'title': 'Opacity:透明度控件', 'route': OpacityDemo()},
+    {'title': 'RefreshIndicator:下拉刷新组件', 'route': RefreshIndicatorDemo()},
     {'title': 'Scafford:脚手架控件', 'route': ScaffoldDemo()},
   ];
 
