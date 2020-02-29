@@ -4,6 +4,7 @@ import 'package:flutter_app/view/my_list_view.dart';
 
 import 'expansion_tile_demo.dart';
 import 'fractionally_sized_box_demo.dart';
+import 'gridview_demo.dart';
 import 'listview_demo.dart';
 
 class WidgetDemo extends MyListViewPage {
@@ -12,6 +13,7 @@ class WidgetDemo extends MyListViewPage {
   static List<Map> items = [
     {'title': 'ExpansionTile:可展开的列表', 'route': ExpansionTileDemo()},
     {'title': 'FractionallySizedBox:比例控件', 'route': FractionallySizedBoxDemo()},
+    {'title': 'GridView:网格布局', 'route': GridViewDemo()},
     {'title': 'ListView', 'route': ListViewDemo()},
     {'title': 'Opacity:透明度控件', 'route': OpacityDemo()},
     {'title': 'Scafford:脚手架控件', 'route': ScaffoldDemo()},
