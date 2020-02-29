@@ -34,9 +34,8 @@ class _GridViewTest1DemoState extends State<GridViewTest1Demo> {
         height: 100,
         margin: EdgeInsets.only(right: 2,top: 2),
         decoration: BoxDecoration(color: Colors.teal),
-        child: Center(
-          child: Text(city),
-        ),
+        alignment: Alignment.center,
+        child: Text(city),
       );
     }).toList();
   }
