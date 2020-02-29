@@ -5,6 +5,7 @@ import 'package:flutter_app/study/app_life_cycle_demo.dart';
 import 'package:flutter_app/study/apps_demo.dart';
 import 'package:flutter_app/study/change_theme_demo.dart';
 import 'package:flutter_app/study/data_structure_demo.dart';
+import 'package:flutter_app/study/expression_demo.dart';
 import 'package:flutter_app/study/flutter_layout_demo.dart';
 import 'package:flutter_app/study/future_builder_demo.dart';
 import 'package:flutter_app/study/future_demo.dart';
@@ -14,6 +15,7 @@ import 'package:flutter_app/study/json_demo.dart';
 import 'package:flutter_app/study/life_cycle_demo.dart';
 import 'package:flutter_app/study/net_rquest_demo.dart';
 import 'package:flutter_app/study/open_other_app.dart';
+import 'package:flutter_app/study/operator_demo.dart';
 import 'package:flutter_app/study/photo_demo.dart';
 import 'package:flutter_app/study/res_demo.dart';
 import 'package:flutter_app/study/router_demo.dart';
@@ -23,7 +25,7 @@ import 'package:flutter_app/study/stateless_widget_demo.dart';
 import 'package:flutter_app/study/widget_demo.dart';
 import 'package:flutter_app/utils/toast.dart';
 
-import 'data_store_demo.dart';
+import 'study/data_store_demo.dart';
 
 
 void main() => runApp(MyApp());
@@ -35,12 +37,13 @@ class MyApp extends StatefulWidget {
     return _MyApp();
   }
 
-
 }
 
 class _MyApp extends State<MyApp> {
   final List<Map> entries = [
     {'title': '好的网站', 'route': GoodWebsiteDemo()},
+    {'title': '运算符', 'route': OperatorDemo()},
+    {'title': '表达式', 'route': ExpressionDemo()},
     {'title': '数据结构', 'route': DataStructureDemo()},
     {'title': '数据存储', 'route': DataStoreDemo()},
     {'title': '动画例子', 'route': AnimationDemo()},

@@ -13,9 +13,7 @@ class _SharePreferenceDemoState extends State<SharePreferenceDemo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.blue
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: AppBar(
           title: Text('SharePreference例子'),
@@ -37,7 +35,7 @@ class _SharePreferenceDemoState extends State<SharePreferenceDemo> {
     );
   }
 
-  void _addCount() async{
+  void _addCount() async {
     SharedPreferences instance = await SharedPreferences.getInstance();
     // 使用条件表达式
     int count = instance.getInt('Count') ?? 0;
@@ -49,7 +47,7 @@ class _SharePreferenceDemoState extends State<SharePreferenceDemo> {
     });
   }
 
-  void _decreseCount() async{
+  void _decreseCount() async {
     SharedPreferences instance = await SharedPreferences.getInstance();
     int count = instance.getInt('Count') ?? 0;
     int value = count - 1;
